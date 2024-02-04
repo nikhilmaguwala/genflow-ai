@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
@@ -23,6 +23,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "crisp-sdk-web": "^1.0.21",
+    "firebase": "^10.8.0",
     "lucide-react": "^0.321.0",
     "next": "13.4.3",
     "openai": "^4.26.0",

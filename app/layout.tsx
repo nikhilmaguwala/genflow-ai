@@ -5,6 +5,9 @@ import "./globals.css";
 import {ModalProvider} from "@/components/modal-provider";
 import {ToasterProvider} from "@/components/toaster-provider";
 import {CrispProvider} from "@/components/crisp-provider";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +21,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
       <ClerkProvider>
         <html lang="en" suppressHydrationWarning>

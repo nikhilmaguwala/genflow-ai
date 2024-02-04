@@ -6,9 +6,30 @@ import { useRouter } from "next/navigation";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import {tools} from "@/constants";
-import {useProModal} from "@/hooks/use-pro-modal";
+import {useEffect} from "react";
+import {getAnalytics} from "firebase/analytics";
+import {initializeApp} from "firebase/app";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyC5ZeAPJ0a1sqecIMA-PMmMOb_VMvnqeTU",
+    authDomain: "genflow-ai.firebaseapp.com",
+    projectId: "genflow-ai",
+    storageBucket: "genflow-ai.appspot.com",
+    messagingSenderId: "508818670419",
+    appId: "1:508818670419:web:9c71604aff45416b3317a6",
+    measurementId: "G-L1H3YQLH3J"
+};
 
 export default function HomePage() {
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    useEffect(() => {
+        console.log("Firebase initialized")
+        console.log(analytics)
+    },[])
 
     const router = useRouter();
 
