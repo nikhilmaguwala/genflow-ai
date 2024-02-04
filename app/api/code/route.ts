@@ -12,7 +12,7 @@ const configuration = {
 const openai = new OpenAI(configuration);
 
 const instructionMessage: OpenAI.Chat.ChatCompletionMessage = {
-    role: "system",
+    role: "assistant",
     content: "You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations."
 }
 
