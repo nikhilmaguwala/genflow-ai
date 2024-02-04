@@ -3,7 +3,7 @@
 <div align="center">
 <br />
     <a target="_blank">
-      <img src="https://raw.githubusercontent.com/nikhilmaguwala/nikhil-maguwala-space-portfolio/main/public/space_photo.png?token=GHSAT0AAAAAACMXOZWRAW6E3TZEYCAKJ5HGZNG5MCA" alt="Project Banner">
+      <img src="https://raw.githubusercontent.com/nikhilmaguwala/genflow-ai/main/public/genflow-thumbnail.png" alt="Project Banner">
     </a>
   <br />
 
