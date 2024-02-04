@@ -11,10 +11,7 @@ const configuration = {
 
 const openai = new OpenAI(configuration);
 
-type ExtendedChatCompletionRequestMessage = Omit<OpenAI.Chat.ChatCompletionMessage, 'role'> & { role: "user" | "assistant" | "system" };
-
-
-const instructionMessage: ExtendedChatCompletionRequestMessage = {
+const instructionMessage: OpenAI.Chat.ChatCompletionMessage = {
     role: "system",
     content: "You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations."
 }
